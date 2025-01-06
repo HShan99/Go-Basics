@@ -30,6 +30,14 @@ func main(){
 
 	// That is the method use in programming
 	newUser := "Hasitha";
-	fmt.Println(newUser);
+	fmt.Println(newUser); 
 
+	// const variable
+	// Area of the circle
+
+	var radius float32 = 10;
+	const pie = 3.14;
+	A := pie *(radius*radius);
+	fmt.Println("Area is : " ,A);
+	
 }
