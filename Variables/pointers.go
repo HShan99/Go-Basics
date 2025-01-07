@@ -2,6 +2,16 @@ package main
 
 import "fmt"
 
+// increment function
+func increment( value *int){
+	*value ++;
+}
+
+//Set to zero function
+func setToZero(value *int){
+	*value = 0;
+}
+
 func main() {
 	var num int = 10
 	fmt.Println(num);
@@ -25,5 +35,14 @@ func main() {
 	fmt.Println(num);
 	fmt.Println(&pointer);
 
+	num1 := 20;
+	increment(&num1);
+
+	fmt.Println("After increment : ", num1);
+
+	setToZero(&num1);
+	fmt.Println(num1);
+	
+	
 
 }
